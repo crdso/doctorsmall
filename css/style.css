@@ -340,6 +340,23 @@ address { font-style: normal; }
 }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
+/* Desktop: reserve room for the tilted marquee within the first viewport. */
+@media (min-width: 861px) {
+  .hero {
+    min-height: calc(100svh - 4rem - 2vw);
+    padding-top: calc(var(--header-h) + 1.25rem);
+    padding-bottom: 1.5rem;
+  }
+  .hero__title {
+    font-size: clamp(3.6rem, min(1.05rem + 9.25vw, 15vh), 9.25rem);
+    margin-bottom: 1.25rem;
+  }
+  .hero__lead { margin-bottom: 1rem; }
+  .hero__actions { margin-bottom: 1.25rem; }
+  .hero__facts { max-width: 48rem; }
+  .hero__facts > div { padding-top: .75rem; }
+}
+
 /* ---------- Intro ---------- */
 .intro { padding-top: calc(var(--sec) + 2rem); }
 .intro__grid { display: grid; gap: 2.5rem; }
