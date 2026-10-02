@@ -345,10 +345,10 @@ address { font-style: normal; }
   .hero {
     min-height: calc(100svh - 4rem - 2vw);
     padding-top: calc(var(--header-h) + 1.25rem);
-    padding-bottom: 1.5rem;
+    padding-bottom: 4.25rem;
   }
   .hero__title {
-    font-size: clamp(3.6rem, min(1.05rem + 9.25vw, 15vh), 9.25rem);
+    font-size: clamp(3.6rem, min(1.05rem + 9.25vw, 13vh), 9.25rem);
     margin-bottom: 1.25rem;
   }
   .hero__lead { margin-bottom: 1rem; }
